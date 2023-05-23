@@ -485,9 +485,13 @@ footer {
     background: linear-gradient(270deg, rgba(77, 94, 246, 0.2) 0%, rgba(246, 77, 77, 0.2) 100%);
 }
 
-footer .wrapper{
+footer .wrapper {
     display: flex;
     gap: 229px;
+}
+
+footer .wrapper .left{
+    margin-bottom: 55px;
 }
 
 footer .wrapper .left .card1 {
@@ -513,4 +517,9 @@ footer .wrapper .left .card1 p {
     line-height: 19px;
     letter-spacing: 0.01em;
     color: #1E1E1E;
+}
+
+.footer-end{
+    padding-top: 41px;
+    border-top: 3px solid grey;
 }
