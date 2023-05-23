@@ -480,3 +480,37 @@ header {
     gap: 20px;
 }
 
+footer {
+    padding-top: 85px;
+    background: linear-gradient(270deg, rgba(77, 94, 246, 0.2) 0%, rgba(246, 77, 77, 0.2) 100%);
+}
+
+footer .wrapper{
+    display: flex;
+    gap: 229px;
+}
+
+footer .wrapper .left .card1 {
+
+    width: 188px;
+}
+
+footer .wrapper .left .card1 h2 {
+    font-weight: 653;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #1E1E1E;
+    margin-bottom: 20px;
+    background-color: none;
+
+}
+
+
+footer .wrapper .left .card1 p {
+    font-weight: 539;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #1E1E1E;
+}
