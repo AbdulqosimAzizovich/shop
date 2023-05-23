@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+          crossorigin="anonymous"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+        />
+        <link rel="stylesheet" href="./styles/styles.css">
+        <title>Document</title>
+    </head>
+
+    
+    <body>
+        <!-- Header start -->
+        <header class="shadow">
+            <div class="container">
+                <nav class="nav d-flex align-items-center justify-content-between" >
+                    <a href="#"><img src="./assets/icons/logo.svg" alt="" class="nav__logo"></a>
+                    <ul class="nav__left d-flex align-items-center list-unstyled">
+                        <li class="nav__left--item">
+                            <button class="btn catalog py-3 px-5">
+                                <i class="bi bi-list"></i> <span>Katalog</span>
+                            </button>
+
+                        </li>
+
+                        <li class="nav__left--item ">
+                            <div class="input-group search">
+                                <input type="text" class="form-control form-input p-3" placeholder="Maxsulotlarni izlash" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <button class="btn btn-outline-secondary px-4 bg-primary" type="button" id="button-addon2"><i class="bi bi-search text-white"></i></button>
+                            </div>
+                            
+                        </li>
+
+                        
+
+                    </ul>
+
+                    <ul class="nav__right list-unstyled d-flex align-items-center justify-content-center gap-5">
+                        <li class="nav__right--item d-flex gap-3">
+                            <span><i class="bi bi-heart"></i></span>
+                            <span><i class="bi bi-cart3"></i></span>
+                        </li>
+
+                        <li class="nav__right--item d-flex">
+                            <button class="btn btn-success "">Kirish</button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Header End -->
+
+        <main>
+            <section id="intro">
+                <div class="container">
+                    <div class="wrapper">
+                      <div id="carouselExampleCaptions" class="carousel slide ">
+                      <div class="carousel-indicators">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="2"
+                          aria-label="Slide 3"
+                        ></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img
+                          src="./assets/images/hero1.jpg"
+                            class="d-block w-100 "
+                            alt="..."
+                          />
+                          <div class="carousel-caption d-none d-md-block rounded">
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                          src="./assets/images/hero1.jpg"
+                            class="d-block w-100 "
+                            alt="..."
+                          />
+                          <div class="carousel-caption d-none d-md-block">
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="./assets/images/hero1.jpg"
+                            class="d-block w-100 "
+                            alt="..."
+                          />
+                          <div class="carousel-caption d-none d-md-block">
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev"
+                      >
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next"
+                      >
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="category">
+                <div class="container">
+                    <h2 class="fs-3">Kategoriyalar</h2>
+
+                    <div class="category__slide">
+                        <div class="card">
+                            <img src="./assets/images/telefon.png" alt="Iphone" class="card-img">
+                            <p class="p-2">Smartfonlar</p>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/images/laptop.png" alt="laptop" class="card-img">
+                            <p class="p-2">Kompyuterlar</p>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/images/Tv.png" alt="Tv" class="card-img">
+                            <p class="p-2">TV</p>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/images/sm_watch.png" alt="sm_watch" class="card-img">
+                            <p class="p-2">Aqlli soatlar</p>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/images/air_pods.png" alt="air_pods" class="card-img">
+                            <p class="p-2">Quloqchinlar</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="./assets/images/conditsioner.png" alt="conditsioner" class="card-img">
+                            <p class="p-2">Konditsioner</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="./assets/images/xolodilnik.png" alt="xolodilnik" class="card-img">
+                            <p class="p-2">Xolodilniklar</p>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/images/kir_mashina.png" alt="kir_mashina" class="card-img">
+                            <p class="p-2">Kir mashina</p>
+                        </div>
+                    </div>
+
+                    <div class="category__btn p-2 bg-white mt-3">
+                        <p class="pt-3 d-flex align-items-center justify-content-center">Batafsil</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sales">
+                <div class="container">
+                  <h2 class="fs-3">Eng ko’p sotilgan</h2>
+
+                  <div class="sales__slide">
+                      <div class="card">
+                          <img src="./assets/images/laptop.png" alt="Iphone" class="card-img"> 
+                          <p class="p-2 text-primary fw-medium ps-4">299 000 so’m</p>
+                          <p class="card-p">Apple Airpods Pro <br>
+                              simsiz quloqchin , Oq rangda   
+                          </p>
+                          <p class="card-buyurtma">1230 ta buyurtma</p>
+                          <div class="d-flex column-gap-5 align-items-center ps-3 pt-1">
+                            <button class="btn btn-primary">Sotib olish</button>
+                            <span><i class="bi bi-cart3"></i></span>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <img src="./assets/images/laptop.png" alt="laptop" class="card-img"> 
+                          <p class="p-2 text-primary fw-medium ps-4">299 000 so’m</p>
+                          <p class="card-p">Apple Airpods Pro <br>
+                              simsiz quloqchin , Oq rangda   
+                          </p>
+                          <p class="card-buyurtma">1230 ta buyurtma</p>
+                          <div class="d-flex column-gap-5 align-items-center ps-3 pt-1">
+                            <button class="btn btn-primary">Sotib olish</button>
+                            <span><i class="bi bi-cart3"></i></span>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <img src="./assets/images/laptop.png" alt="Tv" class="card-img"> 
+                          <p class="p-2 text-primary fw-medium ps-4">299 000 so’m</p>
+                          <p class="card-p">Apple Airpods Pro <br>
+                              simsiz quloqchin , Oq rangda   
+                          </p>
+                          <p class="card-buyurtma">1230 ta buyurtma</p>
+                          <div class="d-flex column-gap-5 align-items-center ps-3 pt-1">
+                            <button class="btn btn-primary">Sotib olish</button>
+                            <span><i class="bi bi-cart3"></i></span>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <img src="./assets/images/laptop.png" alt="sm_watch" class="card-img"> 
+                          <p class="p-2 text-primary fw-medium ps-4">299 000 so’m</p>
+                          <p class="card-p">Apple Airpods Pro <br>
+                              simsiz quloqchin , Oq rangda   
+                          </p>
+                          <p class="card-buyurtma">1230 ta buyurtma</p>
+                          <div class="d-flex column-gap-5 align-items-center ps-3 pt-1">
+                            <button class="btn btn-primary">Sotib olish</button>
+                            <span><i class="bi bi-cart3"></i></span>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <img src="./assets/images/laptop.png" alt="air_pods" class="card-img"> 
+                          <p class="p-2 text-primary fw-medium ps-4">299 000 so’m</p>
+                          <p class="card-p">Apple Airpods Pro <br>
+                              simsiz quloqchin , Oq rangda   
+                          </p>
+                          <p class="card-buyurtma">1230 ta buyurtma</p>
+                          <div class="d-flex column-gap-5 align-items-center ps-3 pt-1">
+                            <button class="btn btn-primary">Sotib olish</button>
+                            <span><i class="bi bi-cart3"></i></span>
+                          </div>
+                      </div>
+
+                  </div>
+
+                  <div class="sales__slide">
+                    <div class="card">
+                        <img src="./assets/images/laptop.png" alt="Iphone" class="card-img"> 
+                        <p class="p-2 text-primary fw-medium ps-4">299 000 so’m</p>
+                        <p class="card-p">Apple Airpods Pro <br>
+                            simsiz quloqchin , Oq rangda   
+                        </p>
+                        <p class="card-buyurtma">1230 ta buyurtma</p>
+                        <div class="d-flex column-gap-5 align-items-center ps-3 pt-1">
+                          <button class="btn btn-primary">Sotib olish</button>
+                          <span><i class="bi bi-cart3"></i></span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/images/laptop.png" alt="laptop" class="card-img"> 
+                        <p class="p-2 text-primary fw-medium ps-4">299 000 so’m</p>
+                        <p class="card-p">Apple Airpods Pro <br>
+                            simsiz quloqchin , Oq rangda   
+                        </p>
+                        <p class="card-buyurtma">1230 ta buyurtma</p>
+                        <div class="d-flex column-gap-5 align-items-center ps-3 pt-1">
+                          <button class="btn btn-primary">Sotib olish</button>
+                          <span><i class="bi bi-cart3"></i></span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/images/laptop.png" alt="Tv" class="card-img"> 
+                        <p class="p-2 text-primary fw-medium ps-4">299 000 so’m</p>
+                        <p class="card-p">Apple Airpods Pro <br>
+                            simsiz quloqchin , Oq rangda   
+                        </p>
+                        <p class="card-buyurtma">1230 ta buyurtma</p>
+                        <div class="d-flex column-gap-5 align-items-center ps-3 pt-1">
+                          <button class="btn btn-primary">Sotib olish</button>
+                          <span><i class="bi bi-cart3"></i></span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/images/laptop.png" alt="sm_watch" class="card-img"> 
+                        <p class="p-2 text-primary fw-medium ps-4">299 000 so’m</p>
+                        <p class="card-p">Apple Airpods Pro <br>
+                            simsiz quloqchin , Oq rangda   
+                        </p>
+                        <p class="card-buyurtma">1230 ta buyurtma</p>
+                        <div class="d-flex column-gap-5 align-items-center ps-3 pt-1">
+                          <button class="btn btn-primary">Sotib olish</button>
+                          <span><i class="bi bi-cart3"></i></span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/images/laptop.png" alt="air_pods" class="card-img"> 
+                        <p class="p-2 text-primary fw-medium ps-4">299 000 so’m</p>
+                        <p class="card-p">Apple Airpods Pro <br>
+                            simsiz quloqchin , Oq rangda   
+                        </p>
+                        <p class="card-buyurtma">1230 ta buyurtma</p>
+                        <div class="d-flex column-gap-5 align-items-center ps-3 pt-1">
+                          <button class="btn btn-primary">Sotib olish</button>
+                          <span><i class="bi bi-cart3"></i></span>
+                        </div>
+                    </div>
+
+                  </div>
+
+                  <div class="category__btn p-2 bg-white mt-3">
+                    <p class="pt-3 d-flex align-items-center justify-content-center">Ko'proq ko'rish</p>
+                  </div>
+                </div>
+            </section>
+
+            <section id="about">
+              <div class="container">
+                <div class="wrapper">
+                  <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./assets/images/Dom-vashey-mechtey.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/images/Dom-vashey-mechtey.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/images/Dom-vashey-mechtey.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="sales">
+              <div class="container">
+                <h2 class="fs-3">Eng ommabop</h2>
+
+                <div class="sales__slide">
+                    <div class="card">
+                        <img src="./assets/images/laptop.png" alt="Iphone" class="card-img"> 
+                        <p class="p-2 text-primary fw-medium ps-4">299 000 so’m</p>
+                        <p class="card-p">Apple Airpods Pro <br>
+                            simsiz quloqchin , Oq rangda   
+                        </p>
+                        <p class="card-buyurtma">1230 ta buyurtma</p>
+                        <div class="d-flex column-gap-5 align-items-center ps-3 pt-1">
+                          <button class="btn btn-primary">Sotib olish</button>
+                          <span><i class="bi bi-cart3"></i></span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/images/laptop.png" alt="laptop" class="card-img"> 
+                        <p class="p-2 text-primary fw-medium ps-4">299 000 so’m</p>
+                        <p class="card-p">Apple Airpods Pro <br>
+                            simsiz quloqchin , Oq rangda   
+                        </p>
+                        <p class="card-buyurtma">1230 ta buyurtma</p>
+                        <div class="d-flex column-gap-5 align-items-center ps-3 pt-1">
+                          <button class="btn btn-primary">Sotib olish</button>
+                          <span><i class="bi bi-cart3"></i></span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/images/laptop.png" alt="Tv" class="card-img"> 
+                        <p class="p-2 text-primary fw-medium ps-4">299 000 so’m</p>
+                        <p class="card-p">Apple Airpods Pro <br>
+                            simsiz quloqchin , Oq rangda   
+                        </p>
+                        <p class="card-buyurtma">1230 ta buyurtma</p>
+                        <div class="d-flex column-gap-5 align-items-center ps-3 pt-1">
+                          <button class="btn btn-primary">Sotib olish</button>
+                          <span><i class="bi bi-cart3"></i></span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/images/laptop.png" alt="sm_watch" class="card-img"> 
+                        <p class="p-2 text-primary fw-medium ps-4">299 000 so’m</p>
+                        <p class="card-p">Apple Airpods Pro <br>
+                            simsiz quloqchin , Oq rangda   
+                        </p>
+                        <p class="card-buyurtma">1230 ta buyurtma</p>
+                        <div class="d-flex column-gap-5 align-items-center ps-3 pt-1">
+                          <button class="btn btn-primary">Sotib olish</button>
+                          <span><i class="bi bi-cart3"></i></span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/images/laptop.png" alt="air_pods" class="card-img"> 
+                        <p class="p-2 text-primary fw-medium ps-4">299 000 so’m</p>
+                        <p class="card-p">Apple Airpods Pro <br>
+                            simsiz quloqchin , Oq rangda   
+                        </p>
+                        <p class="card-buyurtma">1230 ta buyurtma</p>
+                        <div class="d-flex column-gap-5 align-items-center ps-3 pt-1">
+                          <button class="btn btn-primary">Sotib olish</button>
+                          <span><i class="bi bi-cart3"></i></span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="sales__slide">
+                  <div class="card">
+                      <img src="./assets/images/laptop.png" alt="Iphone" class="card-img"> 
+                      <p class="p-2 text-primary fw-medium ps-4">299 000 so’m</p>
+                      <p class="card-p">Apple Airpods Pro <br>
+                          simsiz quloqchin , Oq rangda   
+                      </p>
+                      <p class="card-buyurtma">1230 ta buyurtma</p>
+                      <div class="d-flex column-gap-5 align-items-center ps-3 pt-1">
+                        <button class="btn btn-primary">Sotib olish</button>
+                        <span><i class="bi bi-cart3"></i></span>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <img src="./assets/images/laptop.png" alt="laptop" class="card-img"> 
+                      <p class="p-2 text-primary fw-medium ps-4">299 000 so’m</p>
+                      <p class="card-p">Apple Airpods Pro <br>
+                          simsiz quloqchin , Oq rangda   
+                      </p>
+                      <p class="card-buyurtma">1230 ta buyurtma</p>
+                      <div class="d-flex column-gap-5 align-items-center ps-3 pt-1">
+                        <button class="btn btn-primary">Sotib olish</button>
+                        <span><i class="bi bi-cart3"></i></span>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <img src="./assets/images/laptop.png" alt="Tv" class="card-img"> 
+                      <p class="p-2 text-primary fw-medium ps-4">299 000 so’m</p>
+                      <p class="card-p">Apple Airpods Pro <br>
+                          simsiz quloqchin , Oq rangda   
+                      </p>
+                      <p class="card-buyurtma">1230 ta buyurtma</p>
+                      <div class="d-flex column-gap-5 align-items-center ps-3 pt-1">
+                        <button class="btn btn-primary">Sotib olish</button>
+                        <span><i class="bi bi-cart3"></i></span>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <img src="./assets/images/laptop.png" alt="sm_watch" class="card-img"> 
+                      <p class="p-2 text-primary fw-medium ps-4">299 000 so’m</p>
+                      <p class="card-p">Apple Airpods Pro <br>
+                          simsiz quloqchin , Oq rangda   
+                      </p>
+                      <p class="card-buyurtma">1230 ta buyurtma</p>
+                      <div class="d-flex column-gap-5 align-items-center ps-3 pt-1">
+                        <button class="btn btn-primary">Sotib olish</button>
+                        <span><i class="bi bi-cart3"></i></span>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <img src="./assets/images/laptop.png" alt="air_pods" class="card-img"> 
+                      <p class="p-2 text-primary fw-medium ps-4">299 000 so’m</p>
+                      <p class="card-p">Apple Airpods Pro <br>
+                          simsiz quloqchin , Oq rangda   
+                      </p>
+                      <p class="card-buyurtma">1230 ta buyurtma</p>
+                      <div class="d-flex column-gap-5 align-items-center ps-3 pt-1">
+                        <button class="btn btn-primary">Sotib olish</button>
+                        <span><i class="bi bi-cart3"></i></span>
+                      </div>
+                  </div>
+
+                </div>
+
+                <div class="category__btn p-2 bg-white mt-3">
+                  <p class="pt-3 d-flex align-items-center justify-content-center">Ko'proq ko'rish</p>
+                </div>
+              </div>
+            </section>
+
+            <section id="brands">
+              <div class="container">
+                <h2 class="fs-3"></h2>
+                <div class="angry-grid">
+                  <div id="item-0"><img src="./assets/images/hp.png" alt=""></div>
+                  <div id="item-1"><img src="./assets/images/hp.png" alt=""></div>
+                  <div id="item-2"><img src="./assets/images/hp.png" alt=""></div>
+                  <div id="item-3"><img src="./assets/images/hp.png" alt=""></div>
+                  <div id="item-4"><img src="./assets/images/hp.png" alt=""></div>
+                  <div id="item-5"><img src="./assets/images/hp.png" alt=""></div>
+                  <div id="item-6"><img src="./assets/images/hp.png" alt=""></div>
+                  <div id="item-7"><img src="./assets/images/hp.png" alt=""></div>
+                  <div id="item-8"><img src="./assets/images/hp.png" alt=""></div>
+                  <div id="item-9"><img src="./assets/images/hp.png" alt=""></div>
+                  <div id="item-10"><img src="./assets/images/hp.png" alt=""></div>
+                  <div id="item-11"><img src="./assets/images/hp.png" alt=""></div>
+                  <div id="item-12"><img src="./assets/images/hp.png" alt=""></div>
+                  <div id="item-13"><img src="./assets/images/hp.png" alt=""></div>
+                  <div id="item-14"><img src="./assets/images/hp.png" alt=""></div>
+                </div>
+                
+              </div>
+            </section>
+
+
+
+            
+        </main>
+    </body>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+</html>
