@@ -226,6 +226,7 @@ header {
 
 #brands {
     padding-top: 60px;
+    margin-bottom: 60px;
 }
 
 .angry-grid {
@@ -478,3 +479,4 @@ header {
     margin-top: 20px;
     gap: 20px;
 }
+
