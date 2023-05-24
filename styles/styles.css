@@ -564,5 +564,17 @@ footer .wrapper .left .card1 p {
         gap: 0px;
         height: 100%;
     }
+
+    footer .wrapper{
+        display: block !important;
+    }
+
+    footer .wrapper left{
+        display: block !important;
+    }
+
+    footer .wrapper .footer-end{
+        display: block !important;
+    }
     
 }
