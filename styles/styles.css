@@ -526,6 +526,7 @@ footer .wrapper .left .card1 p {
 
 
 @media only screen and (max-width: 480px){
+
     header .nav .nav__right--item{
         display: none;
     }
@@ -551,5 +552,17 @@ footer .wrapper .left .card1 p {
         overflow-x: scroll;
     }
 
+    .sales .container .sss__slide{
+        display: flex;
+        overflow-x: scroll;
+    }
+    .angry-grid {
+        display: flex;
+        gap: 20px !important;
+        overflow-x: scroll;
+
+        gap: 0px;
+        height: 100%;
+    }
     
 }
