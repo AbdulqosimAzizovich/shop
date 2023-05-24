@@ -523,3 +523,33 @@ footer .wrapper .left .card1 p {
     padding-top: 41px;
     border-top: 3px solid grey;
 }
+
+
+@media only screen and (max-width: 480px){
+    header .nav .nav__right--item{
+        display: none;
+    }
+    header .nav .nav__left--item{
+        display: none;
+    }
+    .category__slide {
+        display: block;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+
+    .category__slide div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    
+
+    #sales .container .sss__slide{
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    
+}
